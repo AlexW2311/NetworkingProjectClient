@@ -35,6 +35,7 @@
   "name":"clientGML",
   "resources":[
     {"id":{"name":"con_client","path":"objects/con_client/con_client.yy",},},
+    {"id":{"name":"obj_mockPlayer","path":"objects/obj_mockPlayer/obj_mockPlayer.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"clientRoom","path":"rooms/clientRoom/clientRoom.yy",},},
     {"id":{"name":"receivedPacket","path":"scripts/receivedPacket/receivedPacket.yy",},},

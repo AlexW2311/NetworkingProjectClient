@@ -19,18 +19,32 @@ function receivedPacket(_buffer){
             
             var _player = instance_create_depth(_x,_y,depth, obj_player);
             _player.socket = socket;
+            ds_map_add(socket_to_instanceId, socket, _player);
         
-        break;
+            break;
+        
+        
+        case network.player_joined:
+            var _socket = buffer_read(_buffer, buffer_u8);
+            var _x = buffer_read(_buffer, buffer_u16);
+            var _y = buffer_read(_buffer, buffer_u16);
+                        
+            var _mock = instance_create_depth(_x,_y,depth, obj_mockPlayer);
+            _mock.socket = _socket;
+            ds_map_add(socket_to_instanceId, _socket, _mock);
+            break;
         
         
 		case network.move:
-		
-		var moveX = buffer_read(_buffer, buffer_u16);
-		var moveY = buffer_read(_buffer, buffer_u16);
-		
-		obj_player.x = moveX;
-		obj_player.y = moveY;
-		break;
+    		var _sock = buffer_read(_buffer, buffer_u8);
+    		var moveX = buffer_read(_buffer, buffer_u16);
+    		var moveY = buffer_read(_buffer, buffer_u16);
+            
+            _player = ds_map_find_value(socket_to_instanceId, _sock);
+    		
+    		_player.x = moveX;
+    		_player.y = moveY;
+    		break;
 		
 	}
 	

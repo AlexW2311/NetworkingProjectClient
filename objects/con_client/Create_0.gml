@@ -2,7 +2,7 @@ port = 5001;
 ipAddress = "127.0.0.1";
 
 
-enum network {connect, move}
+enum network {connect, player_joined, move}
 
 // Creates a client socket
 client = network_create_socket(network_socket_tcp);
@@ -18,4 +18,5 @@ if (connected = -1) {
 
 // Create client buffer
 clientbuffer = buffer_create(1024, buffer_grow, 1);
+socket_to_instanceId = ds_map_create();
 
