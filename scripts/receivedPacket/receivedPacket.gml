@@ -34,6 +34,14 @@ function receivedPacket(_buffer){
             ds_map_add(socket_to_instanceId, _socket, _mock);
             break;
         
+        case network.player_disconnect:
+            var _socket = buffer_read(_buffer, buffer_u8);
+            var _player = ds_map_find_value(socket_to_instanceId,_socket);
+        
+            with(_player){instance_destroy()}
+                
+            ds_map_delete(socket_to_instanceId, _socket)
+        break;
         
 		case network.move:
     		var _sock = buffer_read(_buffer, buffer_u8);
