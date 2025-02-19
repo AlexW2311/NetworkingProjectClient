@@ -17,8 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_gameController","order":4,"path":"objects/obj_gameController/obj_gameController.yy",},
     {"name":"obj_mockPlayer","order":2,"path":"objects/obj_mockPlayer/obj_mockPlayer.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_textInput","order":3,"path":"objects/obj_textInput/obj_textInput.yy",},
+    {"name":"entryRoom","order":1,"path":"rooms/entryRoom/entryRoom.yy",},
     {"name":"SpriteMockPlayer","order":1,"path":"sprites/SpriteMockPlayer/SpriteMockPlayer.yy",},
   ],
 }

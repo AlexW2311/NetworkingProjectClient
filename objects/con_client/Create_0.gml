@@ -2,7 +2,7 @@ port = 5001;
 ipAddress = "127.0.0.1";
 
 
-enum network {connect, player_joined, player_disconnect, move}
+enum network {established, connect, player_joined, player_disconnect, move}
 
 // Creates a client socket
 client = network_create_socket(network_socket_tcp);

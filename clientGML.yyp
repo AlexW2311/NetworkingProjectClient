@@ -35,9 +35,12 @@
   "name":"clientGML",
   "resources":[
     {"id":{"name":"con_client","path":"objects/con_client/con_client.yy",},},
+    {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
     {"id":{"name":"obj_mockPlayer","path":"objects/obj_mockPlayer/obj_mockPlayer.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_textInput","path":"objects/obj_textInput/obj_textInput.yy",},},
     {"id":{"name":"clientRoom","path":"rooms/clientRoom/clientRoom.yy",},},
+    {"id":{"name":"entryRoom","path":"rooms/entryRoom/entryRoom.yy",},},
     {"id":{"name":"receivedPacket","path":"scripts/receivedPacket/receivedPacket.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"SpriteMockPlayer","path":"sprites/SpriteMockPlayer/SpriteMockPlayer.yy",},},
@@ -45,6 +48,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"entryRoom","path":"rooms/entryRoom/entryRoom.yy",},},
     {"roomId":{"name":"clientRoom","path":"rooms/clientRoom/clientRoom.yy",},},
   ],
   "templateType":"game",
