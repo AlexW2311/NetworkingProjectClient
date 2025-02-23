@@ -34,6 +34,7 @@
   },
   "name":"clientGML",
   "resources":[
+    {"id":{"name":"con_chat","path":"objects/con_chat/con_chat.yy",},},
     {"id":{"name":"con_client","path":"objects/con_client/con_client.yy",},},
     {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
     {"id":{"name":"obj_mockPlayer","path":"objects/obj_mockPlayer/obj_mockPlayer.yy",},},
