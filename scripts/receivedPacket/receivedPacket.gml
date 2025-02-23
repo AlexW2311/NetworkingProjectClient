@@ -65,6 +65,11 @@ function receivedPacket(_buffer){
     		_player.x = moveX;
     		_player.y = moveY;
     		break;
+        
+        case network.chat:  //on receipt of msg, add to overall list
+            var _chat = buffer_read(_buffer, buffer_string);
+            ds_list_insert(global.chat,0,_chat); // Inserts chat when received
+            break;
 		
 	}
 	
