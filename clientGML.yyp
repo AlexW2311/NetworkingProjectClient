@@ -43,6 +43,7 @@
     {"id":{"name":"clientRoom","path":"rooms/clientRoom/clientRoom.yy",},},
     {"id":{"name":"entryRoom","path":"rooms/entryRoom/entryRoom.yy",},},
     {"id":{"name":"receivedPacket","path":"scripts/receivedPacket/receivedPacket.yy",},},
+    {"id":{"name":"arrows_spr","path":"sprites/arrows_spr/arrows_spr.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"SpriteMockPlayer","path":"sprites/SpriteMockPlayer/SpriteMockPlayer.yy",},},
   ],

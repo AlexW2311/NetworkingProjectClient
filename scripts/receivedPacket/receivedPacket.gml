@@ -59,11 +59,13 @@ function receivedPacket(_buffer){
     		var _sock = buffer_read(_buffer, buffer_u8);
     		var moveX = buffer_read(_buffer, buffer_u16);
     		var moveY = buffer_read(_buffer, buffer_u16);
-            
+            var spriteDirection = buffer_read(_buffer, buffer_u8);
+            //read dir data here
             _player = ds_map_find_value(socket_to_instanceId, _sock);
     		
     		_player.x = moveX;
     		_player.y = moveY;
+            _player.direction = spriteDirection;
     		break;
         
         case network.chat:  //on receipt of msg, add to overall list
